@@ -19,7 +19,7 @@ import pprint
 
 
 # Carregar algumas variaveis 
-load_dotenv("./auth-service/variaveis.env")
+load_dotenv("./variaveis.env")
 NAME_DB = os.getenv('NAME_DB')
 USERNAME_DB = os.getenv('USERNAME_DB')
 PASSWORD_DB = os.getenv('PASSWORD_DB')
