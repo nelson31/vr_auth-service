@@ -22,6 +22,8 @@ RUN apt-get install -y net-tools
 COPY ./auth-service/ /auth-service/
 WORKDIR /auth-service
 
+# Adicionar um administrador inicial
+CMD [ "python3", "addAdmin.py" ]
 # Correr o Flask
 CMD [ "python3", "appauth.py" ]
 
